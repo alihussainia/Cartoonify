@@ -20,11 +20,21 @@ call('adduser user sudo', shell=True)
 #call('apt install python3-opencv', shell=True) 
 #call('pip3 install opencv-python', shell=True)
 # call('pip3 install cmake==3.21.1', shell=True)
-call('sudo apt -qq update', shell=True)
-call('sudo apt-get -qq install subversion', shell=True)
-call('sudo apt-get -qq install libgl1-mesa-glx', shell=True)
-call('sudo apt-get -qq install -y libgl1-mesa-dev', shell=True)
-call('sudo apt-get -qq install libglib2.0-0', shell=True)
+
+# Download and unpack sources
+call('wget -O opencv.zip https://github.com/opencv/opencv/archive/4.x.zip', shell=True) 
+call('unzip opencv.zip', shell=True) 
+# Create build directory
+call('mkdir -p build && cd build', shell=True) 
+# Configure
+call('cmake  ../opencv-4.x', shell=True) 
+# Build
+call('cmake --build .', shell=True) 
+call('apt -qq update', shell=True)
+call('apt-get -qq install subversion', shell=True)
+call('apt-get -qq install libgl1-mesa-glx', shell=True)
+call('apt-get -qq install -y libgl1-mesa-dev', shell=True)
+call('apt-get -qq install libglib2.0-0', shell=True)
 #call('sudo apt-get -qq install ffmpeg libsm6 libxext6  -y', shell=True)
 call('pip3 install gdown', shell=True)
 call('gdown -q "1bjXhuTt0CNc5tqNN8ogcfB_F1V_RxnXM" -O models/" ', shell=True)
