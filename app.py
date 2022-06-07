@@ -7,7 +7,6 @@ from io import BytesIO
 import os
 import numpy as np
 import onnxruntime
-from utils import Preprocess
 from subprocess import call
 
 st.set_option('deprecation.showfileUploaderEncoding', False)
@@ -28,6 +27,7 @@ call('pip3 install gdown', shell=True)
 call('gdown -q "1bjXhuTt0CNc5tqNN8ogcfB_F1V_RxnXM" -O models/" ', shell=True)
 
 import cv2
+from utils import Preprocess
 
 path = st.text_input('Enter Image URL to Classify.. ')
 img_file_buffer = st.file_uploader("Upload Your Image to Cartoonify....")
