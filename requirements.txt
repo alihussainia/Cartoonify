@@ -1,4 +1,6 @@
---upgrade pip setuptools wheel
+pip 
+setuptools 
+wheel
 tensorflow
 streamlit
 pillow
