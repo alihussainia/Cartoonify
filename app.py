@@ -15,16 +15,16 @@ st.set_option('deprecation.showfileUploaderEncoding', False)
 st.title("Cartoon Image Generator")
 st.text("Either Upload or Provide URL of Your Image")
 
-call('gdown -q "1bjXhuTt0CNc5tqNN8ogcfB_F1V_RxnXM" -O models/', shell=True)
-#call('pip3 install dlib', shell=True)
+# call('gdown -q "1bjXhuTt0CNc5tqNN8ogcfB_F1V_RxnXM" -O models/', shell=True)
+# #call('pip3 install dlib', shell=True)
 
-call('wget https://files.pythonhosted.org/packages/05/57/e8a8caa3c89a27f80bc78da39c423e2553f482a3705adc619176a3a24b36/dlib-19.17.0.tar.gz', shell=True)
+# call('wget https://files.pythonhosted.org/packages/05/57/e8a8caa3c89a27f80bc78da39c423e2553f482a3705adc619176a3a24b36/dlib-19.17.0.tar.gz', shell=True)
 
-call('tar -xvzf dlib-19.17.0.tar.gz', shell=True)
+# call('tar -xvzf dlib-19.17.0.tar.gz', shell=True)
 
-#cd dlib-19.17.0/
+# #cd dlib-19.17.0/
 
-call('sudo python3 dlib-19.17.0/setup.py install', shell=True)
+# call('sudo python3 dlib-19.17.0/setup.py install', shell=True)
 
 
 
