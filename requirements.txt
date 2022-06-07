@@ -3,4 +3,5 @@ pillow
 requests
 onnxruntime
 gdown
-dlib
+opencv-python-headless
+dlib-bin
