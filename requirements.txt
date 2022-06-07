@@ -6,4 +6,6 @@ requests
 ipython==7.21.0
 face-alignment==1.3.4
 onnxruntime
-# gdown
+gdown
+cmake==3.21.1
+opencv-python
