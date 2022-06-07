@@ -22,8 +22,8 @@ st.text("Either Upload or Provide URL of Your Image")
 # call('pip3 install cmake==3.21.1', shell=True)
 
 call('pip install -U opencv-python', shell=True) 
-call('apt-get upgrade', shell=True) 
-call('apt update && apt install -y libsm6 libxext6 ffmpeg libfontconfig1 libxrender1 libgl1-mesa-glx', shell=True) 
+call('apt-get update', shell=True) 
+call('apt-get install ffmpeg libsm6 libxext6  -y', shell=True) 
 
 
 # Download and unpack sources
