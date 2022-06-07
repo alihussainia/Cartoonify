@@ -7,48 +7,15 @@ from io import BytesIO
 import os
 import numpy as np
 import onnxruntime
+import cv2
+from utils import Preprocess
 from subprocess import call
 
 st.set_option('deprecation.showfileUploaderEncoding', False)
 st.title("Cartoon Image Generator")
 st.text("Either Upload or Provide URL of Your Image")
 
-#call('/home/appuser/venv/bin/python -m pip install --upgrade pip', shell=True) 
-#call('pip install --upgrade setuptools wheel', shell=True)
-# call('apt-get install sudo', shell=True) 
-# call('adduser user sudo', shell=True)
-#call('apt install python3-opencv', shell=True) 
-#call('pip3 install opencv-python', shell=True)
-# call('pip3 install cmake==3.21.1', shell=True)
-
-call('pip install -U opencv-python', shell=True) 
-call('apt-get update', shell=True) 
-call('apt-get install ffmpeg libsm6 libxext6  -y', shell=True) 
-
-
-# Download and unpack sources
-# call('wget -O opencv.zip https://github.com/opencv/opencv/archive/4.x.zip', shell=True) 
-# call('unzip opencv.zip', shell=True) 
-# # Create build directory
-# call('mkdir -p build && cd build', shell=True) 
-# # Configure
-# call('cmake  ../opencv-4.x', shell=True) 
-# # Build
-# call('cmake --build .', shell=True) 
-call('apt -qq update', shell=True)
-call('apt-get -qq install subversion', shell=True)
-call('add-apt-repository ppa:opencpn/opencpn', shell=True)
-call('apt -qq update', shell=True)
-call('apt-get install opencpn', shell=True)
-call('apt-get -qq install libgl1-mesa-glx', shell=True)
-call('apt-get -qq install -y libgl1-mesa-dev', shell=True)
-call('apt-get -qq install libglib2.0-0', shell=True)
-#call('sudo apt-get -qq install ffmpeg libsm6 libxext6  -y', shell=True)
-call('pip3 install gdown', shell=True)
 call('gdown -q "1bjXhuTt0CNc5tqNN8ogcfB_F1V_RxnXM" -O models/" ', shell=True)
-
-import cv2
-from utils import Preprocess
 
 path = st.text_input('Enter Image URL to Classify.. ')
 img_file_buffer = st.file_uploader("Upload Your Image to Cartoonify....")
