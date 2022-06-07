@@ -16,7 +16,7 @@ st.title("Cartoon Image Generator")
 st.text("Either Upload or Provide URL of Your Image")
 
 call('gdown -q "1bjXhuTt0CNc5tqNN8ogcfB_F1V_RxnXM" -O models/"', shell=True)
-call('pip3 install dlib', shell=True)
+#call('pip3 install dlib', shell=True)
 
 path = st.text_input('Enter Image URL to Classify.. ')
 img_file_buffer = st.file_uploader("Upload Your Image to Cartoonify....")
