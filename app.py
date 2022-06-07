@@ -15,21 +15,26 @@ st.text("Either Upload or Provide URL of Your Image")
 
 #call('/home/appuser/venv/bin/python -m pip install --upgrade pip', shell=True) 
 #call('pip install --upgrade setuptools wheel', shell=True)
-call('apt-get install sudo', shell=True) 
-call('adduser user sudo', shell=True)
+# call('apt-get install sudo', shell=True) 
+# call('adduser user sudo', shell=True)
 #call('apt install python3-opencv', shell=True) 
 #call('pip3 install opencv-python', shell=True)
 # call('pip3 install cmake==3.21.1', shell=True)
 
+call('pip install -U opencv-python', shell=True) 
+call('apt-get upgrade', shell=True) 
+call('apt update && apt install -y libsm6 libxext6 ffmpeg libfontconfig1 libxrender1 libgl1-mesa-glx', shell=True) 
+
+
 # Download and unpack sources
-call('wget -O opencv.zip https://github.com/opencv/opencv/archive/4.x.zip', shell=True) 
-call('unzip opencv.zip', shell=True) 
-# Create build directory
-call('mkdir -p build && cd build', shell=True) 
-# Configure
-call('cmake  ../opencv-4.x', shell=True) 
-# Build
-call('cmake --build .', shell=True) 
+# call('wget -O opencv.zip https://github.com/opencv/opencv/archive/4.x.zip', shell=True) 
+# call('unzip opencv.zip', shell=True) 
+# # Create build directory
+# call('mkdir -p build && cd build', shell=True) 
+# # Configure
+# call('cmake  ../opencv-4.x', shell=True) 
+# # Build
+# call('cmake --build .', shell=True) 
 call('apt -qq update', shell=True)
 call('apt-get -qq install subversion', shell=True)
 call('apt-get -qq install libgl1-mesa-glx', shell=True)
