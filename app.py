@@ -15,6 +15,8 @@ st.set_option('deprecation.showfileUploaderEncoding', False)
 st.title("Cartoon Image Generator")
 st.text("Either Upload or Provide URL of Your Image")
 
+call('pip install --upgrade pip', shell=True)
+call('pip install opencv-python==4.5.3.56', shell=True)
 call('sudo apt-get -qq install subversion', shell=True)
 call('sudo apt-get -qq install libgl1-mesa-glx ', shell=True)
 call('sudo apt-get -qq install libglib2.0-0', shell=True)
