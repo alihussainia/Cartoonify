@@ -19,4 +19,3 @@ python3-pip
 python-pip-whl
 python-all-dev
 python-setuptools
-python-wheel
