@@ -16,13 +16,13 @@ st.title("Cartoon Image Generator")
 st.text("Either Upload or Provide URL of Your Image")
 
 # call('gdown -q "1bjXhuTt0CNc5tqNN8ogcfB_F1V_RxnXM" -O models/', shell=True)
-call('apt-get update', shell=True)
-call('pip3 install cmake', shell=True)
-call('git clone https://github.com/davisking/dlib.git', shell=True)
-wd = os.getcwd()
-os.chdir('dlib/')
-call('python setup.py install', shell=True)
-os.chdir(wd)
+# call('apt-get update', shell=True)
+# call('pip3 install cmake', shell=True)
+# call('git clone https://github.com/davisking/dlib.git', shell=True)
+# wd = os.getcwd()
+# os.chdir('dlib/')
+# call('python setup.py install', shell=True)
+# os.chdir(wd)
 
 
 
