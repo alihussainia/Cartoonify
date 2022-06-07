@@ -40,7 +40,7 @@ else:
     image_out = Image.open(BytesIO(image_url_content))
     st.image(image_out, caption='Your Image', use_column_width=False, width=400) 
  
-call('sudo rm -R input.jpg" ', shell=True)
+call('sudo rm -R "input.jpg" ', shell=True)
 
 class Photo2Cartoon:
     def __init__(self):
