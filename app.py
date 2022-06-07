@@ -8,6 +8,7 @@ import os
 import numpy as np
 import onnxruntime
 import cv2
+import face_recognition
 from utils import Preprocess
 from subprocess import call
 
