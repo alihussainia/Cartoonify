@@ -39,8 +39,9 @@ else:
     image_url_content = requests.get(defualt_url).content
     image_out = Image.open(BytesIO(image_url_content))
     st.image(image_out, caption='Your Image', use_column_width=False, width=400) 
- 
-call('rm -R "input.jpg" ', shell=True)
+
+if im1:
+    call('rm -R "input.jpg" ', shell=True)
 
 class Photo2Cartoon:
     def __init__(self):
