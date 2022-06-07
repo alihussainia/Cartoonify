@@ -19,8 +19,10 @@ st.text("Either Upload or Provide URL of Your Image")
 call('apt-get update', shell=True)
 call('pip3 install cmake', shell=True)
 call('git clone https://github.com/davisking/dlib.git', shell=True)
-call('python dlib/setup.py install', shell=True)
-
+wd = os.getcwd()
+os.chdir('dlib/')
+call('python setup.py install', shell=True)
+os.chdir(wd)
 # call('wget https://files.pythonhosted.org/packages/05/57/e8a8caa3c89a27f80bc78da39c423e2553f482a3705adc619176a3a24b36/dlib-19.17.0.tar.gz', shell=True)
 
 # call('tar -xvzf dlib-19.17.0.tar.gz', shell=True)
