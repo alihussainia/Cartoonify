@@ -7,7 +7,7 @@ from io import BytesIO
 import os
 import numpy as np
 import onnxruntime
-from .utils import Preprocess
+from utils import Preprocess
 from subprocess import call
 
 st.set_option('deprecation.showfileUploaderEncoding', False)
