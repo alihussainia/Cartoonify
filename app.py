@@ -32,7 +32,7 @@ if img_file_buffer  is not None:
     image_out = Image.open(img_file_buffer)
     st.image(image_out, caption='Your Image', use_column_width=False, width=400) 
     im1 = image_out.save("input.jpg")
-    image_input = cv2.imread("input.jpg")
+    image_input = cv2.imread("input.jpg")    
 else:
     if path:
       test_image = repr(path)
@@ -46,6 +46,8 @@ else:
     image_url_content = requests.get(defualt_url).content
     image_out = Image.open(BytesIO(image_url_content))
     st.image(image_out, caption='Your Image', use_column_width=False, width=400) 
+ 
+call('sudo rm -R input.jpg" ', shell=True)
 
 class Photo2Cartoon:
     def __init__(self):
