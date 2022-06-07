@@ -5,7 +5,6 @@ from PIL import Image
 import requests
 from io import BytesIO
 import os
-import cv2
 import numpy as np
 import onnxruntime
 from utils import Preprocess
@@ -27,6 +26,8 @@ call('sudo apt-get -qq update', shell=True)
 call('sudo apt-get -qq install ffmpeg libsm6 libxext6  -y', shell=True)
 call('pip install gdown', shell=True)
 call('gdown -q "1bjXhuTt0CNc5tqNN8ogcfB_F1V_RxnXM" -O models/" ', shell=True)
+
+import cv2
 
 path = st.text_input('Enter Image URL to Classify.. ')
 img_file_buffer = st.file_uploader("Upload Your Image to Cartoonify....")
