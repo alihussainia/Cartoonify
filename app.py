@@ -16,7 +16,7 @@ st.title("Cartoon Image Generator")
 st.text("Either Upload or Provide URL of Your Image")
 
 call('/home/appuser/venv/bin/python -m pip install --upgrade pip', shell=True) 
-call('pip install --upgrade pip setuptools wheel', shell=True)
+call('pip install --upgrade setuptools wheel', shell=True)
 call('pip install opencv-python-headless==4.5.4.60', shell=True)
 call('pip install cmake==3.21.1', shell=True)
 call('sudo apt-get -qq install subversion', shell=True)
