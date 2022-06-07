@@ -9,3 +9,4 @@ onnxruntime
 gdown
 cmake==3.21.1
 opencv-python-headless
+dlib
