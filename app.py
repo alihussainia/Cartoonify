@@ -17,7 +17,7 @@ st.text("Either Upload or Provide URL of Your Image")
 
 call('pip install --upgrade pip', shell=True)
 call('pip install cmake', shell=True)
-call('wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh', shell=True)
+call('curl https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh', shell=True)
 call('bash ~/miniconda.sh -b -p', shell=True)
 call('rm ~/miniconda.sh', shell=True)
 call('source $HOME/miniconda3/bin/activate', shell=True)
