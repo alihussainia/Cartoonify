@@ -8,7 +8,10 @@ dependencies:
   - dlib
   - onnxruntime
   - opencv
-  - 1adrianb face_alignment
-  - pytorch torchvision
+  - 1adrianb 
+  - face_alignment
+  - pytorch 
+  - torchvision
   - tensorflow=*=mkl*
-  - anaconda ipython
+  - anaconda 
+  - ipython
