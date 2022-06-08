@@ -17,7 +17,7 @@ st.text("Either Upload or Provide URL of Your Image")
 
 call('pip install --upgrade pip', shell=True)
 call('pip install cmake', shell=True)
-call('pip install dlib', shell=True)
+call('conda install -c conda-forge dlib', shell=True)
 call('gdown -q "1bjXhuTt0CNc5tqNN8ogcfB_F1V_RxnXM" -O models/', shell=True)
 # call('apt-get update', shell=True)
 # call('pip3 install cmake', shell=True)
