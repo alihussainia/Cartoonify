@@ -11,4 +11,3 @@ dependencies:
   - ipython==7.21.0
   - dlib
   - opencv
-  - cv2
