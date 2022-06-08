@@ -18,14 +18,13 @@ st.text("Either Upload or Provide URL of Your Image")
 call('pip install --upgrade pip', shell=True)
 call('pip install cmake', shell=True)
 call('pip install boost-python3'.shell=True)
-call('pip install dlib==18.17.100',shell=True)
-# call('git clone https://github.com/davisking/dlib.git', shell=True)
-# wd = os.getcwd()
-# os.chdir('dlib/')
-# call('python setup.py install --yes USE_NEON_INSTRUCTIONS', shell=True)
-# os.chdir(wd)
+call('git clone https://github.com/davisking/dlib', shell=True)
+wd = os.getcwd()
+os.chdir('dlib/')
+call('python3 setup.py install', shell=True)
+os.chdir(wd)
 call('gdown -q "1bjXhuTt0CNc5tqNN8ogcfB_F1V_RxnXM" -O models/', shell=True)
-
+call('pip3 install opencv_python-4.1.1.26-cp37-cp37m-manylinux1_x86_64.whl'. shell=True)
 
 
 
