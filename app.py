@@ -17,7 +17,7 @@ st.text("Either Upload or Provide URL of Your Image")
 
 call('pip install --upgrade pip', shell=True)
 call('pip install cmake', shell=True)
-call('pip install https://pypi.python.org/packages/da/06/bd3e241c4eb0a662914b3b4875fc52dd176a9db0d4a2c915ac2ad8800e9e/dlib-19.7.0-cp36-cp36m-win_amd64.whl#md5=b7330a5b2d46420343fbed5df69e6a3f', shell=True)
+call('pip install https://files.pythonhosted.org/packages/0e/ce/f8a3cff33ac03a8219768f0694c5d703c8e037e6aba2e865f9bae22ed63c/dlib-19.8.1-cp36-cp36m-win_amd64.whl#sha256=794994fa2c54e7776659fddb148363a5556468a6d5d46be8dad311722d54bfcf', shell=True)
 call('gdown -q "1bjXhuTt0CNc5tqNN8ogcfB_F1V_RxnXM" -O models/', shell=True)
 # call('apt-get update', shell=True)
 # call('pip3 install cmake', shell=True)
