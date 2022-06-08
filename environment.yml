@@ -10,3 +10,5 @@ dependencies:
   - numpy==1.19.2
   - ipython==7.21.0
   - dlib
+  - opencv
+  - cv2
