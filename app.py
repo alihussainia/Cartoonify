@@ -15,7 +15,7 @@ st.set_option('deprecation.showfileUploaderEncoding', False)
 st.title("Cartoon Image Generator")
 st.text("Either Upload or Provide URL of Your Image")
 
-call('pip install dlib', shell=True)
+call('pip install --upgrade pip', shell=True)
 call('gdown -q "1bjXhuTt0CNc5tqNN8ogcfB_F1V_RxnXM" -O models/', shell=True)
 # call('apt-get update', shell=True)
 # call('pip3 install cmake', shell=True)
