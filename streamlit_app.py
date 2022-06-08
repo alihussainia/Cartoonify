@@ -7,7 +7,6 @@ from io import BytesIO
 import os
 import numpy as np
 import onnxruntime
-from utils import Preprocess
 from subprocess import call
 
 st.set_option('deprecation.showfileUploaderEncoding', False)
@@ -23,7 +22,7 @@ call('pip install -r requirements.txt', shell=True)
 # call('python3 setup.py install', shell=True)
 # os.chdir(wd)
 import cv2
-
+from utils import Preprocess
 call('gdown -q "1bjXhuTt0CNc5tqNN8ogcfB_F1V_RxnXM" -O models/', shell=True)
 # call('pip3 install opencv_python-4.1.1.26-cp37-cp37m-manylinux1_x86_64.whl'. shell=True)
 
