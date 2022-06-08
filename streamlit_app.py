@@ -6,13 +6,13 @@ import requests
 from io import BytesIO
 import os
 import numpy as np
-import onnxruntime
 from subprocess import call
 
 st.set_option('deprecation.showfileUploaderEncoding', False)
 st.title("Cartoon Image Generator")
 st.text("Either Upload or Provide URL of Your Image")
 
+call('pip install --upgrade pip setuptools wheel'.shell=True)
 call('pip install -r requirements.txt', shell=True)
 # call('pip install cmake', shell=True)
 # call('pip install boost-python3'.shell=True)
@@ -22,6 +22,7 @@ call('pip install -r requirements.txt', shell=True)
 # call('python3 setup.py install', shell=True)
 # os.chdir(wd)
 import cv2
+import onnxruntime
 from utils import Preprocess
 call('gdown -q "1bjXhuTt0CNc5tqNN8ogcfB_F1V_RxnXM" -O models/', shell=True)
 # call('pip3 install opencv_python-4.1.1.26-cp37-cp37m-manylinux1_x86_64.whl'. shell=True)
