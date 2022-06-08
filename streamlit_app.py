@@ -13,7 +13,7 @@ st.title("Cartoon Image Generator")
 st.text("Either Upload or Provide URL of Your Image")
 
 #call('python -m pip install -–upgrade pip setuptools wheel'.shell=True)
-call('pip install -r requirements.txt', shell=True)
+#call('pip install -r requirements.txt', shell=True)
 # call('pip install cmake', shell=True)
 # call('pip install boost-python3'.shell=True)
 # call('git clone https://github.com/davisking/dlib', shell=True)
