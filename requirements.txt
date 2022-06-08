@@ -2,4 +2,5 @@ gdown
 face-alignment==1.3.4
 torch==1.8.0
 tensorflow-cpu
-opencv-python-headless
+opencv-python==3.4.2.17
+opencv-contrib-python==3.4.2.17
