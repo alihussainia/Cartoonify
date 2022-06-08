@@ -6,3 +6,4 @@ numpy==1.19.2
 ipython==7.21.0
 face-alignment==1.3.4
 tensorflow-cpu
+gdown
