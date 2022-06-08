@@ -17,19 +17,14 @@ st.text("Either Upload or Provide URL of Your Image")
 
 call('pip install --upgrade pip', shell=True)
 call('pip install cmake', shell=True)
-call('git clone https://github.com/davisking/dlib.git', shell=True)
-wd = os.getcwd()
-os.chdir('dlib/')
-call('python setup.py install --yes USE_NEON_INSTRUCTIONS', shell=True)
-os.chdir(wd)
-call('gdown -q "1bjXhuTt0CNc5tqNN8ogcfB_F1V_RxnXM" -O models/', shell=True)
-# call('apt-get update', shell=True)
-# call('pip3 install cmake', shell=True)
+call('pip install dlib==18.17.100',shell=True)
 # call('git clone https://github.com/davisking/dlib.git', shell=True)
 # wd = os.getcwd()
 # os.chdir('dlib/')
-# call('python setup.py install', shell=True)
+# call('python setup.py install --yes USE_NEON_INSTRUCTIONS', shell=True)
 # os.chdir(wd)
+call('gdown -q "1bjXhuTt0CNc5tqNN8ogcfB_F1V_RxnXM" -O models/', shell=True)
+
 
 
 
